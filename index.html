@@ -249,7 +249,6 @@
       </div>
       <img data-src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
 
-
       <div class="page-header">
         <h1>Labels</h1>
       </div>
@@ -310,6 +309,40 @@
         <span class="label label-danger">Danger</span>
       </p>
 
+      <div class="page-header">
+          <h1>The Modal Plugin</h1>
+      </div>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+      <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+              <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="page-header">
+          <h1>Tooltip</h1>
+      </div>
+      <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</button>
+      <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Botton</button>
+      <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</button>
+      <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</button>
+      <button type="button" class="btn btn-info" data-toggle="tooltip" data-placement="auto" title="Hooray!">Auto</button>
 
       <div class="page-header">
         <h1>Badges</h1>
@@ -322,22 +355,124 @@
         <li role="presentation"><a href="#">Profile</a></li>
         <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
       </ul>
-
-
+      <div class="page-header">
+        <h1>Tabs With Dropdown Menu</h1>
+      </div>
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Submenu 1-1</a></li>
+            <li><a href="#">Submenu 1-2</a></li>
+            <li><a href="#">Submenu 1-3</a></li> 
+          </ul>
+        </li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+      </ul>
+      
+      <div class="page-header">
+        <h1>Collapsible & Accordion</h1>
+      </div>
+      <div class="row">
+        <div class="col col-sm-6">
+          <div class="panel-group">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" href="#collapse0">Collapsible list group</a>
+                </h4>
+              </div>
+              <div id="collapse0" class="panel-collapse collapse">
+                <ul class="list-group">
+                  <li class="list-group-item">One</li>
+                  <li class="list-group-item">Two</li>
+                  <li class="list-group-item">Three</li>
+                </ul>
+                <div class="panel-footer">Footer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-6">
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                  Collapsible Group 1</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse in">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                  Collapsible Group 2</a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                  Collapsible Group 3</a>
+                </h4>
+              </div>
+              <div id="collapse3" class="panel-collapse collapse">
+                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="page-header">
         <h1>Dropdown menus</h1>
       </div>
-      <div class="dropdown theme-dropdown clearfix">
-        <a id="dropdownMenu1" href="#" class="sr-only dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li class="active"><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
+      <div class="row">
+        <div class="col col-sm-6">
+          <div class="dropdown theme-dropdown clearfix">
+            <a id="dropdownMenu1" href="#" class="sr-only dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li class="active"><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col col-sm-6">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" href="#">HTML</a></li>
+              <li role="presentation"><a role="menuitem" href="#">CSS</a></li>
+              <li role="presentation"><a role="menuitem" href="#">JavaScript</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-
 
       <div class="page-header">
         <h1>Navs</h1>
@@ -420,10 +555,141 @@
                 </ul>
               </li>
             </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
           </div><!--/.nav-collapse -->
         </div>
       </nav>
 
+      <div class="page-header">
+        <h1>Forms</h1>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <br/>
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <br/>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="pwd">Password:</label>
+          <div class="col-sm-10"> 
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+          </div>
+        </div>
+        <div class="form-group"> 
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group"> 
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </div>
+      </form>
+      <br/>
+      <form class="form-horizontal">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon">Text</span>
+            <input id="msg" type="text" class="form-control" name="msg" placeholder="Additional Info">
+          </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Focused</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="focusedInput" type="text" value="Click to focus">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="disabledInput" class="col-sm-2 control-label">Disabled</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="disabledInput" type="text" disabled>
+          </div>
+        </div>
+        <fieldset disabled>
+          <div class="form-group">
+            <label for="disabledTextInput" class="col-sm-2 control-label">Fieldset disabled</label>
+            <div class="col-sm-10">
+              <input type="text" id="disabledTextInput" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="disabledSelect" class="col-sm-2 control-label"></label>
+            <div class="col-sm-10">
+              <select id="disabledSelect" class="form-control">
+                <option>Disabled select</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group has-success has-feedback">
+          <label class="col-sm-2 control-label" for="inputSuccess">
+          Input with success and icon</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputSuccess">
+            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+          </div>
+        </div>
+        <div class="form-group has-warning has-feedback">
+          <label class="col-sm-2 control-label" for="inputWarning">
+          Input with warning and icon</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputWarning">
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+          </div>
+        </div>
+        <div class="form-group has-error has-feedback">
+          <label class="col-sm-2 control-label" for="inputError">
+          Input with error and icon</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputError">
+            <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+          </div>
+        </div>
+      </form>
 
       <div class="page-header">
         <h1>Alerts</h1>
@@ -525,6 +791,7 @@
             <div class="panel-body">
               Panel content
             </div>
+            <div class="panel-footer">Panel Footer</div>
           </div>
           <div class="panel panel-primary">
             <div class="panel-heading">
@@ -581,6 +848,16 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
       </div>
 
+      <div class="page-header">
+        <h1>Pagination</h1>
+      </div>
+      <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li class="active"><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
 
       <div class="page-header">
         <h1>Carousel</h1>
@@ -619,5 +896,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./js/vendor/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+    </script>
   </body>
 </html>
